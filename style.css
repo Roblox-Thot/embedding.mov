@@ -1,0 +1,99 @@
+.logo.is-animetion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo.is-animetion span {
+    text-shadow: 9px 8px 15px #000;
+    display: inline-block;
+    animation: wave-text 1s ease-in-out infinite, wave-background 2s ease-in-out infinite;
+
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    --height: -0.6em;
+}
+
+.logo.is-animetion.hosted span {
+    font-weight: bold;
+    animation: wave-text 1s ease-in-out infinite, wave-background 2s ease-in-out infinite;
+    
+    background-image: repeating-linear-gradient(45deg, red,rgb(35, 0, 0),red);
+    --height: .25em;
+}
+
+@keyframes wave-background {
+    00% {
+        background-position: 0% 50%
+    }
+
+    60% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes wave-text {
+    00% {
+        transform: translateY(0em);
+    }
+
+    60% {
+        transform: translateY(var(--height,5em));
+    }
+
+    100% {
+        transform: translateY(0em);
+    }
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    background-image: url('https://www.spacejam.com/1996/img/bg_stars.gif');
+    animation: spin 1s linear infinite;
+    font-family: 'Comic Sans MS', 'Arial';
+}
+
+.container {
+    border-radius: 25px;
+    background-image: url('https://www.w3schools.com/css/paper.gif');
+    padding: 2em;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.links {
+    display: grid;
+    place-items: center;
+}
+
+.links tr th{
+    transition: 0.3s;
+    text-decoration: underline red;
+    color: blue;
+    cursor: pointer;
+}
+
+.links tr th{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.links tr th:hover {
+    transform: rotate(10deg);
+    color: #f00;
+}

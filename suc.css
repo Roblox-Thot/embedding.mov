@@ -1,0 +1,75 @@
+.peeky{
+    position: absolute;
+    height: 30vh;
+    bottom: -30vh;
+    left: 0;
+    z-index: -1;
+    animation: focus-in-contract 300s ease;
+    transform:rotate3d(0,0,0,0deg) rotate(0deg);
+}
+
+@keyframes focus-in-contract {
+    0%{
+        bottom:-30vh;
+        display: block;
+    }
+    2%{
+        bottom:-30vh;
+        display: block;
+    }
+    4%{
+        bottom:-17vh;
+        display: block;
+    }
+    4.3%{
+        bottom:-30vh;
+        display: none;
+    }
+    /*
+    4.3%{
+        left:0;
+        bottom:-30vh;
+        transform:rotate3d(0,0,0,0deg) rotate(0deg);
+        opacity:1;
+    }
+    4.35%{
+        left:0;
+        bottom:-30vh;
+        opacity:0;
+    }
+    4.4%{
+        left: 110vw;
+        bottom:200vh;
+        transform:rotate3d(0,1,0,180deg) rotate(90deg);
+        opacity:0;
+    }
+    10%{
+        left: 110vw;
+        bottom:80vh;
+        transform:rotate3d(0,1,0,180deg) rotate(90deg);
+        opacity:0;
+    }
+    11%{
+        opacity:1;
+    }
+    12%{
+        left: 95vw;
+        bottom:80vh;
+        transform:rotate3d(0,1,0,180deg) rotate(90deg);
+    }
+    13%{
+        left: 95vw;
+        bottom:80vh;
+        transform:rotate3d(0,1,0,180deg) rotate(90deg);
+    }
+    14%{
+        left: 110vw;
+        bottom:80vh;
+        transform:rotate3d(0,1,0,180deg) rotate(90deg);
+    }
+    100%{
+        left:130vw;
+        bottom:80vh;
+        transform:rotate3d(0,1,0,180deg) rotate(90deg);
+    } */
+}
