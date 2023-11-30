@@ -47,11 +47,7 @@ function copyLink(){ // Lazy coding
     copyTextToClipboard(links[this.innerText])
 }
 
-if (document.location.host == "embedding.mov"){ // If you copy on embedding.mov i want it to be embedding.mov/ies lol
-    base = document.location.origin + "/ies"
-}else{
-    base = document.location.origin + "/movies"
-}
+base = document.location.origin
 
 let links = {// Unsorted list of links to be sorted later
     "Airplane! (1980)": base+"/airplane",
